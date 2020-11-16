@@ -1,0 +1,21 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mouse": "0.0.1",
+    "node-mouse": "0.0.2"
+  }
+}

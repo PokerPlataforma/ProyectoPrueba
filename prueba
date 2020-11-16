@@ -1,0 +1,20 @@
+import win32gui
+import pynput
+import sys
+
+def callback(hwnd, extra):
+       rect = win32gui.GetWindowRect(hwnd)
+       x = rect[0]
+       y = rect[1]
+       w = rect[2] - x
+       h = rect[3] - y
+       if win32gui.GetWindowText(hwnd) == extra:
+         print (w,h,x,y)
+
+def main():
+       program = sys.stdin.readlines()
+       win32gui.EnumWindows(callback, program[0])
+       print(program[0])
+
+if __name__ == '__main__':
+       main()
